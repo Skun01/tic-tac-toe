@@ -29,9 +29,8 @@ html{
     width: 450px;
 }
 
-
 .playing-mode{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 30px;
 }
@@ -44,8 +43,9 @@ html{
     width: 80px;
 }
 
+.human-mode-sec,
 .modes{
-    border: 5px solid black;
+    border: 5px solid #1E2D24;
     border-radius: 30px;
     padding: 15px 30px;
     display: flex;
@@ -53,6 +53,7 @@ html{
     background-color: white;
     cursor: pointer;
     transition: all 0.2s;
+    box-shadow: 0 0 3px 5px rgba(255, 255, 255, 0.3);
 }
 
 .modes:hover{
@@ -71,8 +72,70 @@ html{
     transition: color 0.2s;
 }
 
+body .human-mode-sec{
+    background-color: #f3ede9;
+    cursor:auto;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.human-mode-sec .vs-text{
+    font-size: 35px;
+    color: #001D3D;
+}
+
+.human-mode-wrap{
+    display: flex;
+    gap: 15px;
+}
+
+.role-name{
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.player-1{
+    color: #9D0208;
+}
+
+.player-2{
+    color: #118AB2;
+}
+
+.fight-btn{
+    align-self: center;
+    background-color: yellow;
+    font-size: 35px;
+    font-family: inherit;
+    padding: 5px 50px;
+    cursor: pointer;
+    border: 3px solid #FFBA08;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+
+.fight-btn:hover{
+    color: yellow;
+    background-color: black;
+    border-color: #03071E;
+}
+
+.role{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.role .x-icon,
+.role .o-icon{
+    width: 40px;
+}
+
+
+
 .footer{
-    justify-self: end;
+    
 }
 
 
