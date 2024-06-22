@@ -22,8 +22,8 @@
         </div>
 
         <!-- human mode section -->
-         <div class="human-mode-sec">
-            <div class="human-mode-wrap">
+         <div class="human-mode-sec selected-mode-sec">
+            <div class="selected-mode-wrap">
                 <div class="role player-1">
                     <img class="human-face" src="./assets/images/human-face.png" alt="">
                     <img src="./assets/images/x_icon.png" alt="" class="x-icon">
@@ -36,6 +36,29 @@
                     <div class="role-name">Player 2</div>
                 </div>
             </div>
+            <button class="fight-btn">Fight!</button>
+         </div>
+
+         <!-- bot mode section -->
+         <div class="bot-mode-sec selected-mode-sec">
+            <div class="selected-mode-wrap">
+                <div class="role player">
+                    <img class="bot-face" src="./assets/images/human-face.png" alt="">
+                    <img src="./assets/images/x_icon.png" alt="" class="x-icon">
+                    <div class="role-name">You</div>
+                </div>
+                <span class="vs-text">vs</span>
+                <div class="role bot">
+                    <img class="human-face" src="./assets/images/bot-face.png" alt="">
+                    <img src="./assets/images/o_icon.png" alt="" class="o-icon">
+                    <div class="role-name">Bot</div>
+                </div>
+            </div>
+            <ul class="difficult-mode">
+                <li id="easy">easy</li>
+                <li id="medium">medium</li>
+                <li id="impossible">impossible</li>
+            </ul>
             <button class="fight-btn">Fight!</button>
          </div>
     </div>

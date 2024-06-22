@@ -43,7 +43,7 @@ html{
     width: 80px;
 }
 
-.human-mode-sec,
+.selected-mode-sec,
 .modes{
     border: 5px solid #1E2D24;
     border-radius: 30px;
@@ -53,11 +53,11 @@ html{
     background-color: white;
     cursor: pointer;
     transition: all 0.2s;
-    box-shadow: 0 0 3px 5px rgba(255, 255, 255, 0.3);
 }
 
 .modes:hover{
     transform: scale(1.1);
+    box-shadow: 0 0 3px 5px rgba(255, 255, 255, 0.3);
 }
 
 .modes:hover .vs-text{
@@ -72,19 +72,24 @@ html{
     transition: color 0.2s;
 }
 
-body .human-mode-sec{
+body .selected-mode-sec{
     background-color: #f3ede9;
-    cursor:auto;
     flex-direction: column;
+    cursor:auto;
     gap: 25px;
 }
+
+.human-mode-sec{
+    display: none;
+}
+
 
 .human-mode-sec .vs-text{
     font-size: 35px;
     color: #001D3D;
 }
 
-.human-mode-wrap{
+.selected-mode-wrap{
     display: flex;
     gap: 15px;
 }
@@ -101,6 +106,8 @@ body .human-mode-sec{
 .player-2{
     color: #118AB2;
 }
+
+
 
 .fight-btn{
     align-self: center;
@@ -132,6 +139,42 @@ body .human-mode-sec{
     width: 40px;
 }
 
+.bot-mode-sec{
+    display: flex;
+}
+
+.difficult-mode{
+    display: flex;
+    list-style: none;
+    align-self: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.difficult-mode li{
+    padding: 4px 8px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.difficult-mode li:hover{
+    outline: 3px solid black;
+    z-index: 10;
+}
+
+#easy{
+    background-color: #D6CCC2;
+    outline: 3px solid black;
+    z-index: 10;
+}
+
+#medium{
+    background-color: #52796F;
+}
+
+#impossible{
+    background-color: #EF233C;
+}
 
 
 .footer{
