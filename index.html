@@ -27,13 +27,13 @@
                 <div class="role player-1">
                     <img class="human-face" src="./assets/images/human-face.png" alt="">
                     <img src="./assets/images/x_icon.png" alt="" class="x-icon">
-                    <div class="role-name">Player 1</div>
+                    <div class="role-name x-icon">Player 1</div>
                 </div>
                 <span class="vs-text">vs</span>
                 <div class="role player-2">
                     <img class="human-face" src="./assets/images/human-face.png" alt="">
                     <img src="./assets/images/o_icon.png" alt="" class="o-icon">
-                    <div class="role-name">Player 2</div>
+                    <div class="role-name o-icon">Player 2</div>
                 </div>
             </div>
             <button class="fight-btn">Fight!</button>
@@ -45,13 +45,13 @@
                 <div class="role player">
                     <img class="bot-face" src="./assets/images/human-face.png" alt="">
                     <img src="./assets/images/x_icon.png" alt="" class="x-icon">
-                    <div class="role-name">You</div>
+                    <div class="role-name x-icon">You</div>
                 </div>
                 <span class="vs-text">vs</span>
                 <div class="role bot">
                     <img class="human-face" src="./assets/images/bot-face.png" alt="">
                     <img src="./assets/images/o_icon.png" alt="" class="o-icon">
-                    <div class="role-name">Bot</div>
+                    <div class="role-name o-icon">Bot</div>
                 </div>
             </div>
             <ul class="difficult-mode">
@@ -61,6 +61,59 @@
             </ul>
             <button class="fight-btn">Fight!</button>
          </div>
+
+         <!-- the fight is begin -->
+
+         <!-- human vs bot -->
+         <div class="fight-container">
+             <div class="fight-mode human-vs-bot">
+                <div class="role-wrapper">
+                    <div class="role player">
+                        <img class="bot-face" src="./assets/images/human-face.png" alt="">
+                        <img src="./assets/images/x_icon.png" alt="" class="x-icon">
+                        <div class="role-name x-icon">You</div>
+                        <p class="point x-icon"></p>
+                    </div>
+
+                    <p class="point x-icon">0</p>
+                </div>
+
+                <div class="game-table">
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="game-table-cover">
+                        <p class="alert">It's a tie!</p>
+                    </div>
+                </div>
+
+                <div class="role-wrapper">
+                    <div class="role bot">
+                        <img class="human-face" src="./assets/images/bot-face.png" alt="">
+                        <img src="./assets/images/o_icon.png" alt="" class="o-icon">
+                        <div class="role-name o-icon">Bot</div>
+                    </div>
+
+                    <p class="point o-icon">0</p>
+                </div>
+             </div>
+         </div>
+
+        <div class="btn-sec">
+            <p class="back-btn btn">Back</p>
+
+            <div class="playing-tool">
+                <p class="next-round-btn btn">Next round</p>
+                <p class="reset-btn btn">Reset</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="footer">

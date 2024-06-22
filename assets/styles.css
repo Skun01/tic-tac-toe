@@ -13,7 +13,6 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 15px 0;
-    height: 100vh;
     background-image: url('./images/background\ game.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,16 +98,6 @@ body .selected-mode-sec{
     font-size: 25px;
 }
 
-.player-1{
-    color: #9D0208;
-}
-
-.player-2{
-    color: #118AB2;
-}
-
-
-
 .fight-btn{
     align-self: center;
     background-color: yellow;
@@ -134,13 +123,21 @@ body .selected-mode-sec{
     gap: 10px;
 }
 
-.role .x-icon,
-.role .o-icon{
+.role img.x-icon,
+.role img.o-icon{
     width: 40px;
 }
 
+.x-icon{
+    color: #9D0208;
+}
+
+.o-icon{
+    color: #118AB2;
+}
+
 .bot-mode-sec{
-    display: flex;
+    display: none;
 }
 
 .difficult-mode{
@@ -175,6 +172,122 @@ body .selected-mode-sec{
 #impossible{
     background-color: #EF233C;
 }
+
+.btn-sec{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.btn{
+    cursor: pointer;
+    color: #2B2D42;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+.back-btn{
+    margin-top: 15px;
+}
+
+.playing-tool{
+    display: flex;
+    gap: 30px;;
+}
+
+.next-round-btn{
+    width: 70px;
+    line-height: 25px;
+    font-size: 30px;
+}
+
+
+.btn:hover{
+    transform: scale(1.1);
+    color: #03071E;
+}
+
+.fight-container{
+    display: flex;
+}
+
+.fight-container .role{
+    border: 5px solid #03071E;
+    border-radius: 25px;
+    background-color: #f3ede9;
+    width: fit-content;
+    height: fit-content;
+    flex-shrink: 0;
+    padding: 15px 30px;
+    align-self: center;
+    transition: all 0.15s;
+}
+
+.fight-container .role-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.fight-container .role-wrapper .point{
+    font-size: 60px;
+    text-align: center;
+}
+
+.fight-container .player:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 4px 6px rgba(255, 0, 0, 0.5);
+}
+
+.fight-container .bot:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 4px 6px rgba(3, 19, 241, 0.5);
+}
+
+.fight-mode{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.human-vs-bot{
+
+}
+
+.game-table{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: 5px solid #03071E;
+    border-radius: 15px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3,1fr);
+    position: relative;
+}
+
+.game-table-cover{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(3, 4, 94, 0.9);
+}
+
+.game-table-cover .alert{
+    font-size: 35px;
+    line-height: 400px;
+    color: white;
+}
+
+.game-table .cell{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
 
 
 .footer{
