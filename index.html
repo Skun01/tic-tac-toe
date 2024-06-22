@@ -64,9 +64,10 @@
 
          <!-- the fight is begin -->
 
-         <!-- human vs bot -->
-         <div class="fight-container">
-             <div class="fight-mode human-vs-bot">
+         
+        <div class="fight-container">
+            <!-- human vs bot -->
+            <div class="fight-mode human-vs-bot">
                 <div class="role-wrapper">
                     <div class="role player">
                         <img class="bot-face" src="./assets/images/human-face.png" alt="">
@@ -102,8 +103,50 @@
 
                     <p class="point o-icon">0</p>
                 </div>
-             </div>
-         </div>
+            </div>
+
+             <!-- human vs human -->
+            <div class="fight-mode human-vs-human">
+                <div class="role-wrapper">
+                    <div class="role player">
+                        <img class="bot-face" src="./assets/images/human-face.png" alt="">
+                        <img src="./assets/images/x_icon.png" alt="" class="x-icon">
+                        <div class="role-name x-icon">Player 1</div>
+                        <p class="point x-icon"></p>
+                    </div>
+    
+                    <p class="point x-icon">0</p>
+                </div>
+    
+                <div class="game-table">
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="cell 00"></div>
+                    <div class="game-table-cover">
+                        <p class="alert">It's a tie!</p>
+                    </div>
+                </div>
+    
+                <div class="role-wrapper">
+                    <div class="role player">
+                        <img class="human-face" src="./assets/images/human-face.png" alt="">
+                        <img src="./assets/images/x_icon.png" alt="" class="x-icon">
+                        <div class="role-name x-icon">Player 2</div>
+                        <p class="point x-icon"></p>
+                    </div>
+    
+                    <p class="point o-icon">0</p>
+                </div>
+            </div>
+        </div>
+         
+         <!-- human vs human mode -->
 
         <div class="btn-sec">
             <p class="back-btn btn">Back</p>

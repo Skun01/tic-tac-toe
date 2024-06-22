@@ -253,9 +253,12 @@ body .selected-mode-sec{
 }
 
 .human-vs-bot{
-
+    display: none;;
 }
 
+.human-vs-human{
+    display: flex;
+}
 .game-table{
     width: 400px;
     height: 400px;
