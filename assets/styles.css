@@ -1,0 +1,81 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* import font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ:wght@100..400&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    height: 100vh;
+    background-image: url('./images/background\ game.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 40px;
+}
+
+html{
+    font-family: "Playwrite NZ", cursive;
+}
+
+.main-logo{
+    display: block;
+    width: 450px;
+}
+
+
+.playing-mode{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.human-face{
+    width: 80px;
+}
+
+.bot-face{
+    width: 80px;
+}
+
+.modes{
+    border: 5px solid black;
+    border-radius: 30px;
+    padding: 15px 30px;
+    display: flex;
+    gap: 15px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.modes:hover{
+    transform: scale(1.1);
+}
+
+.modes:hover .vs-text{
+    color: #EA2B1F;
+}
+
+.vs-text{
+    font-weight: bolder;
+    font-size: 30px;
+    align-self: center;
+    text-transform: uppercase;
+    transition: color 0.2s;
+}
+
+.footer{
+    justify-self: end;
+}
+
+
+
+
+
