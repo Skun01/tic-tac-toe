@@ -17,6 +17,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     gap: 40px;
+    min-height: 100vh;
 }
 
 html{
@@ -29,7 +30,7 @@ html{
 }
 
 .playing-mode{
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 30px;
 }
@@ -253,11 +254,11 @@ body .selected-mode-sec{
 }
 
 .human-vs-bot{
-    display: none;;
+    display: none;
 }
 
 .human-vs-human{
-    display: flex;
+    display: none;
 }
 .game-table{
     width: 400px;
