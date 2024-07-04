@@ -22,7 +22,7 @@
         </div>
 
         <!-- human mode section -->
-         <div class="human-mode-sec selected-mode-sec">
+         <div class="human-mode-setting selected-mode-sec">
             <div class="selected-mode-wrap">
                 <div class="role player-1">
                     <img class="human-face" src="./assets/images/human-face.png" alt="">
@@ -40,7 +40,7 @@
          </div>
 
          <!-- bot mode section -->
-         <div class="bot-mode-sec selected-mode-sec">
+         <div class="bot-mode-setting selected-mode-sec">
             <div class="selected-mode-wrap">
                 <div class="role player">
                     <img class="bot-face" src="./assets/images/human-face.png" alt="">
@@ -69,28 +69,27 @@
             <!-- human vs bot -->
             <div class="fight-mode human-vs-bot">
                 <div class="role-wrapper">
-                    <div class="role player">
+                    <div class="role player turn">
                         <img class="bot-face" src="./assets/images/human-face.png" alt="">
                         <img src="./assets/images/x_icon.png" alt="" class="x-icon">
                         <div class="role-name x-icon">You</div>
-                        <p class="point x-icon"></p>
                     </div>
 
                     <p class="point x-icon">0</p>
                 </div>
 
                 <div class="game-table">
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
+                    <div class="cell"  index="00"></div>
+                    <div class="cell"  index="01"></div>
+                    <div class="cell"  index="02"></div>
+                    <div class="cell"  index="10"></div>
+                    <div class="cell"  index="11"></div>
+                    <div class="cell"  index="12"></div>
+                    <div class="cell"  index="20"></div>
+                    <div class="cell"  index="21"></div>
+                    <div class="cell"  index="22"></div>
                     <div class="game-table-cover">
-                        <p class="alert">It's a tie!</p>
+                        It's a tie!
                     </div>
                 </div>
 
@@ -108,37 +107,35 @@
              <!-- human vs human -->
             <div class="fight-mode human-vs-human">
                 <div class="role-wrapper">
-                    <div class="role player">
+                    <div class="role player turn" id="player-1">
                         <img class="bot-face" src="./assets/images/human-face.png" alt="">
                         <img src="./assets/images/x_icon.png" alt="" class="x-icon">
                         <div class="role-name x-icon">Player 1</div>
-                        <p class="point x-icon"></p>
                     </div>
     
                     <p class="point x-icon">0</p>
                 </div>
     
-                <div class="game-table">
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
-                    <div class="cell 00"></div>
+                <div class="game-table ">
+                    <div class="cell"  index="00"></div>
+                    <div class="cell"  index="01"></div>
+                    <div class="cell"  index="02"></div>
+                    <div class="cell"  index="10"></div>
+                    <div class="cell"  index="11"></div>
+                    <div class="cell"  index="12"></div>
+                    <div class="cell"  index="20"></div>
+                    <div class="cell"  index="21"></div>
+                    <div class="cell"  index="22"></div>
                     <div class="game-table-cover">
                         <p class="alert">It's a tie!</p>
                     </div>
                 </div>
     
                 <div class="role-wrapper">
-                    <div class="role player">
+                    <div class="role player" id="player-2">
                         <img class="human-face" src="./assets/images/human-face.png" alt="">
-                        <img src="./assets/images/x_icon.png" alt="" class="x-icon">
+                        <img src="./assets/images/o_icon.png" alt="" class="o-icon">
                         <div class="role-name x-icon">Player 2</div>
-                        <p class="point x-icon"></p>
                     </div>
     
                     <p class="point o-icon">0</p>
@@ -162,6 +159,6 @@
     <div class="footer">
         <p class="copyright">This is <a href="#">truongg</a> project</p>
     </div>
-    <script src="./assets/js/playingMode.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

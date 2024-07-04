@@ -79,12 +79,12 @@ body .selected-mode-sec{
     gap: 25px;
 }
 
-.human-mode-sec{
+.human-mode-setting{
     display: none;
 }
 
 
-.human-mode-sec .vs-text{
+.human-mode-setting .vs-text{
     font-size: 35px;
     color: #001D3D;
 }
@@ -137,7 +137,7 @@ body .selected-mode-sec{
     color: #118AB2;
 }
 
-.bot-mode-sec{
+.bot-mode-setting{
     display: none;
 }
 
@@ -191,11 +191,12 @@ body .selected-mode-sec{
 }
 
 .back-btn{
+    display: none;
     margin-top: 15px;
 }
 
 .playing-tool{
-    display: flex;
+    display: none;
     gap: 30px;;
 }
 
@@ -237,9 +238,13 @@ body .selected-mode-sec{
     text-align: center;
 }
 
-.fight-container .player:hover{
+.turn{
     transform: scale(1.1);
     box-shadow: 0 0 4px 6px rgba(255, 0, 0, 0.5);
+}
+
+#player-2.turn{
+    box-shadow: 0 0 4px 6px rgba(12, 9, 187, 0.5);
 }
 
 .fight-container .bot:hover{
@@ -279,9 +284,10 @@ body .selected-mode-sec{
     left: 0;
     right: 0;
     background-color: rgba(3, 4, 94, 0.9);
+    display: none;
 }
 
-.game-table-cover .alert{
+.game-table-cover{
     font-size: 35px;
     line-height: 400px;
     color: white;
@@ -290,9 +296,23 @@ body .selected-mode-sec{
 .game-table .cell{
     border: 2px solid black;
     cursor: pointer;
+    padding: 15px;
 }
 
+.x-check{
+    background-image: url('./images/x_icon.png');
+}
 
+.o-check{
+    background-image: url('./images/o_icon.png');
+}
+
+.x-check,
+.o-check{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+}
 
 .footer{
     
