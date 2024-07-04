@@ -307,6 +307,7 @@ const gameFightHvsH = (function (){
     Event.on('resetGameTable', resetTable);
 
     function resetTable(data){
+        gameResult.style.display = 'none';
         cellList.forEach(function(cell){
             cell.classList.remove('x-check');
             cell.classList.remove('o-check')
